@@ -71,5 +71,42 @@ Looking for more? Discover user-friendly, GUI-free script here:
 
 
 
+---
+
+
+## Git Repository Cloning Batch Script 📦
+
+The batch script below assists in cloning a specific git repository. Before running the script, ensure that Git is installed on your system. You can get it from [Git's official site](https://git-scm.com/). 
+
+Here is a brief explanation of the script:
+
+1. It first checks whether Git is installed on your system.
+2. If Git is installed, it proceeds to clone the 'main' branch of the specified repository (in this case, the pyTemplate repository).
+3. If an error occurs at any point (like Git not being installed or the repository failing to clone), it displays an appropriate error message.
+
+```batch
+@echo off
+:: Check if git is installed
+where git >nul 2>nul
+if %errorlevel% neq 0 (
+    echo Git is not installed. Please install it from https://git-scm.com/ to proceed.
+    exit /b 1
+)
+
+:: Clone the repository
+git clone https://github.com/SECRET-GUEST/pyTemplate.git -b main
+
+if %errorlevel% neq 0 (
+    echo An error occurred while cloning the repository.
+    exit /b 1
+)
+
+echo The repository was cloned successfully.
+exit /b 0
+```
+
+Save this script as a `.bat` file and execute it to clone the repository. Once the repository is cloned successfully, a confirmation message will be displayed.
+
+
 
 
