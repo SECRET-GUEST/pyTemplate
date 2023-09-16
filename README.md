@@ -15,7 +15,7 @@
 
 # Builder1 🛠️
 
-MECHA Builder is a robust tool that automates the process of creating and compiling Python applications, featuring real-time internationalization through a dynamic translation file. This tool integrates batch and Python scripts to deliver an optimal user experience.
+Builder1 is a robust tool that automates the process of creating and compiling Python applications, featuring real-time internationalization through a dynamic translation file. This tool integrates batch and Python scripts to deliver an optimal user experience.
 
 ---
 ---
