@@ -7,8 +7,6 @@
  ╚═════╝╚═╝     ╚═╝            ╚═╝   ╚══════╝╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
                                                                                                          
 ```
-[![NEWS](https://img.shields.io/badge/NEWS-INFO-yellow?style=for-the-badge&colorA=black)](#news)
-
 # C++ Templates 🛠️
 
 This repository is dedicated to providing versatile C++ templates. The main branch serves primarily as a presentation, thus utilizing the specific branches which house various template variants is highly recommended. Each branch is meticulously crafted to accommodate different requirements and preferences.
