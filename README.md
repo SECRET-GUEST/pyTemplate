@@ -46,18 +46,19 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 📌 Quick Start
 
-For Linux users, leveraging the [Actions for Nautilus](https://github.com/SECRET-GUEST/actions-for-nautilus) repository allows for the creation of customized actions, including easy cloning of this repository with just one click, provided Git is installed on your system.
+### Linux users
 
+Leveraging the [Actions for Nautilus](https://github.com/SECRET-GUEST/actions-for-nautilus) repository allows for the creation of customized actions, including easy cloning of this repository with just one click, provided Git is installed on your system.
 
-Clone the `windows` branch:
+### Windows users
+
+You can just clone the `windows` branch:
 
 ```shell
 git clone https://github.com/SECRET-GUEST/pyTemplate.git --branch windows
 ```
 
----
-
-### Git Repository Cloning Batch Script for windows users 📦
+you can also use a batch script to make a **one-click installer** for anytime you need to clone :
 
 The batch script below assists in cloning a specific git repository. Before running the script, ensure that Git is installed on your system. You can get it from [Git's official site](https://git-scm.com/). 
 
