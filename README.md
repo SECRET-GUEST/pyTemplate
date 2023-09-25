@@ -27,17 +27,11 @@ The `main` branch serves as a general example. For a more streamlined and custom
 ## 🔍 Prerequisites
 Before you begin, ensure you have met the following requirements:
 - [Python 3.10](https://www.python.org/downloads/) or higher installed.
+
+Windows users 
 - [Inno Setup](http://www.jrsoftware.org/isdl.php) installed for building setup files on Windows.
 - [PyInstaller](https://pyinstaller.readthedocs.io/) for packaging the Python applications.
 
-
-## ❓ Support & Questions
-
-For any queries or support needs, please feel free to open an issue or start a discussion. 
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## 💎 Recommendations
 
@@ -90,3 +84,14 @@ exit /b 0
 ```
 
 Save this script as a `.bat` file and execute it to clone the repository. Once the repository is cloned successfully, a confirmation message will be displayed.
+
+
+
+## ❓ Support & Questions
+
+For any queries or support needs, please feel free to open an issue or start a discussion. 
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
