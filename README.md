@@ -1,43 +1,35 @@
 ```
- ██████╗██████╗ ██████╗     ████████╗███████╗███╗   ███╗██████╗ ██╗      █████╗ ████████╗███████╗███████╗
-██╔════╝██╔══██╗██╔══██╗    ╚══██╔══╝██╔════╝████╗ ████║██╔══██╗██║     ██╔══██╗╚══██╔══╝██╔════╝██╔════╝
-██║     ██████╔╝██████╔╝       ██║   █████╗  ██╔████╔██║██████╔╝██║     ███████║   ██║   █████╗  ███████╗
-██║     ██╔═══╝ ██╔═══╝        ██║   ██╔══╝  ██║╚██╔╝██║██╔═══╝ ██║     ██╔══██║   ██║   ██╔══╝  ╚════██║
-╚██████╗██║     ██║            ██║   ███████╗██║ ╚═╝ ██║██║     ███████╗██║  ██║   ██║   ███████╗███████║
- ╚═════╝╚═╝     ╚═╝            ╚═╝   ╚══════╝╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
-                                                                                                         
+██████╗ ██╗   ██╗████████╗██╗  ██╗ ██████╗ ███╗   ██╗    ████████╗███████╗███╗   ███╗██████╗ ██╗      █████╗ ████████╗███████╗███████╗
+██╔══██╗╚██╗ ██╔╝╚══██╔══╝██║  ██║██╔═══██╗████╗  ██║    ╚══██╔══╝██╔════╝████╗ ████║██╔══██╗██║     ██╔══██╗╚══██╔══╝██╔════╝██╔════╝
+██████╔╝ ╚████╔╝    ██║   ███████║██║   ██║██╔██╗ ██║       ██║   █████╗  ██╔████╔██║██████╔╝██║     ███████║   ██║   █████╗  ███████╗
+██╔═══╝   ╚██╔╝     ██║   ██╔══██║██║   ██║██║╚██╗██║       ██║   ██╔══╝  ██║╚██╔╝██║██╔═══╝ ██║     ██╔══██║   ██║   ██╔══╝  ╚════██║
+██║        ██║      ██║   ██║  ██║╚██████╔╝██║ ╚████║       ██║   ███████╗██║ ╚═╝ ██║██║     ███████╗██║  ██║   ██║   ███████╗███████║
+╚═╝        ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝       ╚═╝   ╚══════╝╚═╝     ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
 ```
-# C++ Templates 🛠️
+![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Batch Script](https://img.shields.io/badge/Batch-Script-blue)
 
-This repository is dedicated to providing versatile C++ templates. The main branch serves primarily as a presentation, thus utilizing the specific branches which house various template variants is highly recommended. Each branch is meticulously crafted to accommodate different requirements and preferences.
+# Python Templates 🐍
 
----
+Python Templates is a versatile repository designed to automate the process of creating and compiling Python applications across different operating systems. This tool ensures the smooth integration of different scripts to offer an optimal user experience, featuring real-time internationalization through a dynamic translation file.
 
-## 📋 Table of Contents
+This repository contains different branches for various operating systems:
+- `windows` for Windows-specific templates.
+- `nautilus` for Linux (Nautilus file manager) specific templates.
 
-1. [News](#news)
-2. [Usage](#-usage)
-3. [Support & Questions](#-support--questions)
-4. [License](#-license)
+The `main` branch serves as a general example. For a more streamlined and customized experience, it is recommended to clone the specific branches.
 
----
 
-## NEWS
+## 🌟 Features
+- Real-time internationalization through an integrated translation file.
+- Seamless integration of different scripts for streamlined operation.
+- Pre-packaged Python application templates.
 
-- 🗞️ Explore and use the specialized branches for diverse template options in C++.
+## 🔍 Prerequisites
+Before you begin, ensure you have met the following requirements:
+- [Python 3.10](https://www.python.org/downloads/) or higher installed.
+- [Inno Setup](http://www.jrsoftware.org/isdl.php) installed for building setup files on Windows.
+- [PyInstaller](https://pyinstaller.readthedocs.io/) for packaging the Python applications.
 
-## 🔄 Usage
-
-1. Navigate to the desired branch.
-2. Use the following command to clone the specific branch:
-
-```sh
-git clone --branch <branch-name> <repository-url>
-```
-
-Replace `<branch-name>` with the name of the branch you want to clone, and `<repository-url>` with the URL of this repository.
-
-For users of Linux utilizing Nautilus, cloning and creating a repository can be done in one click using actions from this [repository](https://github.com/SECRET-GUEST/actions-for-nautilus), provided git is installed on the machine.
 
 ## ❓ Support & Questions
 
@@ -50,3 +42,50 @@ This project is licensed under the [MIT License](LICENSE).
 ## 💎 Recommendations
 
 - For Linux users, check out this [repository](https://github.com/SECRET-GUEST/actions-for-nautilus) to effortlessly create actions in Nautilus, enabling repository creation and cloning with a single click, given that git is installed on your system.
+
+
+## 📌 Quick Start
+
+For Linux users, leveraging the [Actions for Nautilus](https://github.com/SECRET-GUEST/actions-for-nautilus) repository allows for the creation of customized actions, including easy cloning of this repository with just one click, provided Git is installed on your system.
+
+
+Clone the `windows` branch:
+
+```shell
+git clone https://github.com/SECRET-GUEST/pyTemplate.git --branch windows
+```
+
+---
+
+### Git Repository Cloning Batch Script for windows users 📦
+
+The batch script below assists in cloning a specific git repository. Before running the script, ensure that Git is installed on your system. You can get it from [Git's official site](https://git-scm.com/). 
+
+Here is a brief explanation of the script:
+
+1. It first checks whether Git is installed on your system.
+2. If Git is installed, it proceeds to clone the 'main' branch of the specified repository (in this case, the pyTemplate repository).
+3. If an error occurs at any point (like Git not being installed or the repository failing to clone), it displays an appropriate error message.
+
+```batch
+@echo off
+:: Check if git is installed
+where git >nul 2>nul
+if %errorlevel% neq 0 (
+    echo Git is not installed. Please install it from https://git-scm.com/ to proceed.
+    exit /b 1
+)
+
+:: Clone the repository
+git clone https://github.com/SECRET-GUEST/pyTemplate.git -b main
+
+if %errorlevel% neq 0 (
+    echo An error occurred while cloning the repository.
+    exit /b 1
+)
+
+echo The repository was cloned successfully.
+exit /b 0
+```
+
+Save this script as a `.bat` file and execute it to clone the repository. Once the repository is cloned successfully, a confirmation message will be displayed.
