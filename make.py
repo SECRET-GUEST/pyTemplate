@@ -50,12 +50,12 @@ translator.print_message("Veuillez entrer le nom du programme : ", progressive_d
 file_name = input()
 print()
 
-translator.print_message("Veuillez entrer la version du programme (sans espace ni symboles) : ", progressive_display=True)
+translator.print_message("Veuillez entrer la version du programme (sans espace ni symboles sauf les points) : ", progressive_display=True)
 version = input()
 print()
 
 # Vérification du format de la version
-if not re.match("^[A-Za-z0-9]+$", version):
+if not re.match("^[A-Za-z0-9.]+$", version):
     print()
     translator.print_message("Erreur: La version ne doit contenir que des lettres et des chiffres.", progressive_display=True)
     print()
@@ -67,18 +67,25 @@ verification_choice = get_verification_choice()
 
 
 
+def generate_datas_lines(root_dir):
+    datas_lines = []
+    for root, _, files in os.walk(root_dir):
+        for file in files:
+            file_path = os.path.join(root, file)
+            dest_dir = os.path.relpath(root, root_dir)
+            datas_lines.append((os.path.normpath(file_path), dest_dir))
+    return datas_lines
+
 # Étape 3 : Préparer les lignes pour le fichier .spec
 file_name = file_name.lower()
-icon_path = os.path.join(script_dir, 'assets', 'ico', '{}.ico'.format(file_name))  # Adjusted the path to include 'assets' folder
-datas_lines = [
-    (os.path.join(script_dir, f, fname).replace('/', '\\\\'), f)
-    for f in os.listdir(script_dir) 
-    if os.path.isdir(os.path.join(script_dir, f)) 
-    for fname in os.listdir(os.path.join(script_dir, f))
-]
+icon_path = os.path.join(script_dir, 'assets', 'ico', '{}.ico'.format(file_name))
 
-# Ajouter la ligne pour l'icône
-datas_lines.append((icon_path.replace('/', '\\\\'), 'assets'))
+# Générer datas_lines pour tout le contenu du dossier script_dir
+datas_lines = generate_datas_lines(script_dir)
+
+# Ajouter la ligne pour l'icône si nécessaire (bien que cela devrait déjà être couvert par generate_datas_lines)
+#datas_lines.append((icon_path.replace('/', '\\\\'), 'assets\\ico'))
+
 
 analysis_line = os.path.join(script_dir, 'main.py')
 
