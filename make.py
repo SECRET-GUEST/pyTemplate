@@ -65,8 +65,6 @@ if not re.match("^[A-Za-z0-9.]+$", version):
 verification_choice = get_verification_choice()
 
 
-
-
 def generate_datas_lines(root_dir):
     datas_lines = []
     for root, _, files in os.walk(root_dir):
@@ -82,10 +80,6 @@ icon_path = os.path.join(script_dir, 'assets', 'ico', '{}.ico'.format(file_name)
 
 # Générer datas_lines pour tout le contenu du dossier script_dir
 datas_lines = generate_datas_lines(script_dir)
-
-# Ajouter la ligne pour l'icône si nécessaire (bien que cela devrait déjà être couvert par generate_datas_lines)
-#datas_lines.append((icon_path.replace('/', '\\\\'), 'assets\\ico'))
-
 
 analysis_line = os.path.join(script_dir, 'main.py')
 
